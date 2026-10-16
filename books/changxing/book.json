@@ -1,0 +1,39 @@
+{
+  "id": "changxing",
+  "title": "新编围棋常型技巧大全",
+  "chapters": [
+    {
+      "id": "03",
+      "volume": "上册",
+      "title": "第一章 角部打入常型",
+      "patterns": 29,
+      "figures": 1705
+    },
+    {
+      "id": "04",
+      "volume": "上册",
+      "title": "第二章 边角攻防常型",
+      "patterns": 11,
+      "figures": 389
+    },
+    {
+      "id": "05",
+      "volume": "下册",
+      "title": "第三章 边路打入常型",
+      "patterns": 17,
+      "figures": 959
+    },
+    {
+      "id": "06",
+      "volume": "下册",
+      "title": "第四章 布局攻防常型",
+      "patterns": 8,
+      "figures": 835
+    }
+  ],
+  "stats": {
+    "chapters": 4,
+    "patterns": 65,
+    "figures": 3888
+  }
+}

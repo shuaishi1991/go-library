@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>围棋书房 · 阅读</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="reader">
+<header class="reader-header">
+  <button id="nav-toggle" class="icon-btn" title="目录">☰</button>
+  <a href="index.html" class="back-link" title="返回书架">⌂</a>
+  <span id="reader-book-title" class="reader-book-title"></span>
+  <span id="reader-crumb" class="reader-crumb"></span>
+</header>
+<div class="reader-body">
+  <aside id="sidebar" class="sidebar">
+    <div id="nav-tree" class="nav-tree"><p class="loading">正在加载目录…</p></div>
+  </aside>
+  <div id="sidebar-mask" class="sidebar-mask"></div>
+  <main class="stage">
+    <div class="figure-bar">
+      <button id="fig-prev" class="icon-btn" title="上一图">‹</button>
+      <div id="figure-tabs" class="figure-tabs"></div>
+      <button id="fig-next" class="icon-btn" title="下一图">›</button>
+    </div>
+    <div class="stage-main">
+      <section class="board-area">
+        <div id="board-wrap" class="board-wrap"></div>
+        <div id="practice-banner" class="practice-banner hidden"></div>
+        <div class="control-bar">
+          <div class="ctl-group">
+            <button id="ctl-first" class="icon-btn" title="首手">⏮</button>
+            <button id="ctl-prev" class="icon-btn" title="上一手">◀</button>
+            <button id="ctl-next" class="icon-btn" title="下一手">▶</button>
+            <button id="ctl-last" class="icon-btn" title="末手">⏭</button>
+            <button id="ctl-play" class="icon-btn" title="自动播放">▶▶</button>
+          </div>
+          <span id="move-counter" class="move-counter">0 / 0</span>
+          <div class="ctl-group">
+            <button id="ctl-practice" class="icon-btn toggle" title="试下模式">✋ 试下</button>
+            <button id="ctl-answer" class="icon-btn hidden" title="显示答案">💡</button>
+          </div>
+          <div class="ctl-group">
+            <button id="opt-numbers" class="icon-btn toggle" title="显示手数">①②</button>
+            <button id="opt-coords" class="icon-btn toggle" title="显示坐标">🅰</button>
+            <button id="opt-marks" class="icon-btn toggle" title="显示标记">△</button>
+            <button id="opt-crop" class="icon-btn toggle" title="局部 / 全盘">✂ 局部</button>
+          </div>
+        </div>
+      </section>
+      <aside class="comment-panel">
+        <h3 id="comment-title" class="comment-title"></h3>
+        <div id="comment-text" class="comment-text"></div>
+      </aside>
+    </div>
+  </main>
+</div>
+<script src="assets/js/board.js"></script>
+<script src="assets/js/reader.js"></script>
+</body>
+</html>
